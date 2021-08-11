@@ -16,7 +16,7 @@ workflows:
       - welcome/run
     triggers:
       - schedule:
-          cron: 0 10 * * *
+          cron: 0 8 * * *
           filters:
             branches:
               only:
