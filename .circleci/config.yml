@@ -16,17 +16,7 @@ workflows:
       - welcome/run
     triggers:
       - schedule:
-          cron: 0 9 * * *
-          filters:
-            branches:
-              only:
-                - main
-  daily-workflow:
-    jobs:
-      - welcome/run
-    triggers:
-      - schedule:
-          cron: 0 22 * * *
+          cron: 0 4 * * *
           filters:
             branches:
               only:
